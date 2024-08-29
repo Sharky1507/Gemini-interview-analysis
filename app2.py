@@ -4,7 +4,7 @@ import google.generativeai as genai
 import time
 
 # Configure the API key
-API_KEY = ""
+API_KEY = st.secrets['api_keys']['genai']
 genai.configure(api_key=API_KEY)
 
 # Initialize an empty DataFrame to store the results
